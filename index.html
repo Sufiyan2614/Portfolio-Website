@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sufiyan Makhiwala — UI/UX & Product Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+  <img src="images/Sufiyan UX.svg" alt="Sufiyan UX" height="36" />
+</a>
+    <!-- <span class="nav-logo-dot"></span>
+    SUFIYAN UX -->
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="https://drive.google.com/file/d/1Z8tgqDYv7sQNuyflXlT3SazOyfFnOv92/view?usp=sharing" target="_blank" class="nav-cta">Download Resume →</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#process" onclick="closeMobile()">Process</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="mailto:sufiyanchhipa2600@gmail.com" onclick="closeMobile()" style="color:var(--accent)">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-tag">
+    <span class="hero-tag-dot"></span>
+    Available for Freelance · Based in India
+  </div>
+  <h1 class="hero-title">
+    <span class="hero-line">DESIGN THAT SPEAKS</span>
+    <!-- <span class="hero-line">THAT</span>
+    <span class="hero-line">SPEAKS.</span> -->
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-desc">
+      I'm <strong>Sufiyan Makhiwala</strong> — a UI/UX & Product Designer with 2+ years shipping <strong>10+ digital products</strong> across healthcare, fintech, and SaaS. I turn complex problems into clean, user-centered experiences.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="mailto:sufiyanchhipa2600@gmail.com" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item">UI/UX Design <span>✦</span></div>
+    <div class="marquee-item">Product Design <span>✦</span></div>
+    <div class="marquee-item">User Research <span>✦</span></div>
+    <div class="marquee-item">Prototyping <span>✦</span></div>
+    <div class="marquee-item">Design Systems <span>✦</span></div>
+    <div class="marquee-item">Figma Expert <span>✦</span></div>
+    <div class="marquee-item">Usability Testing <span>✦</span></div>
+    <div class="marquee-item">Responsive Design <span>✦</span></div>
+    <div class="marquee-item">UI/UX Design <span>✦</span></div>
+    <div class="marquee-item">Product Design <span>✦</span></div>
+    <div class="marquee-item">User Research <span>✦</span></div>
+    <div class="marquee-item">Prototyping <span>✦</span></div>
+    <div class="marquee-item">Design Systems <span>✦</span></div>
+    <div class="marquee-item">Figma Expert <span>✦</span></div>
+    <div class="marquee-item">Usability Testing <span>✦</span></div>
+    <div class="marquee-item">Responsive Design <span>✦</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">About Me</div>
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <div class="about-img-frame">
+        <img 
+          src="images/about _me.png" 
+          alt="SM - UI/UX Designer"
+          class="about-photo"
+        />
+        <div class="about-initials">SM</div>
+      </div>
+      <div class="about-badge">
+        <span class="num">2+</span>
+        <span class="lbl">YRS EXP</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <h2 class="section-title reveal">Designing experiences that <em>solve real</em> problems.</h2>
+      <p class="reveal reveal-delay-1">
+        I'm a UI/UX & Product Designer at <strong>Zesty Solution</strong>, where I've shipped 10+ digital products
+        across healthcare, fintech, and SaaS. I specialize in the end-to-end product design process
+        — from user research to pixel-perfect delivery.
+      </p>
+      <p class="reveal reveal-delay-2">
+        I'm proficient in <strong>Figma</strong> (Auto Layout, Components, Variants, Design Systems), Adobe
+        Photoshop, Illustrator, and Framer. I collaborate closely with developers, PMs, and stakeholders,
+        and also mentor junior designers to maintain high standards.
+      </p>
+      <div class="skills-chips reveal reveal-delay-3">
+        <span class="chip">Figma</span>
+        <span class="chip">Adobe Photoshop</span>
+        <span class="chip">Illustrator</span>
+        <span class="chip">Framer</span>
+        <span class="chip">UX Strategy</span>
+        <span class="chip">Design Systems</span>
+        <span class="chip">Prototyping</span>
+        <span class="chip">Usability Testing</span>
+        <span class="chip">Information Architecture</span>
+      </div>
+      <div class="stats-row reveal reveal-delay-3">
+        <div class="stat-item">
+          <div class="stat-num">10<span>+</span></div>
+          <div class="stat-lbl">Products Shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6<span>+</span></div>
+          <div class="stat-lbl">Industries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-lbl">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background: var(--bg2);">
+  <div class="projects-header reveal">
+    <div>
+      <div class="section-label">Latest Projects</div>
+      <h2 class="section-title">Selected <em>work</em></h2>
+    </div>
+    <a href="#" class="btn-outline">All Projects →</a>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card large proj-1 reveal">
+      <div class="project-thumb">
+        <img src="images/taaqud_project.jpg" alt="HealthTrack" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">HEALTH</div> -->
+        <div class="project-overlay">
+  <a href="https://taaqud.om/" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Taaqud Non-Profit Website</div>
+          <div class="project-tags">
+            <span class="project-tag">E-commerce</span>
+            <!-- <span class="project-tag">SaaS</span>
+            <span class="project-tag">Dashboard</span> -->
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+    <div class="project-card proj-2 reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="images/safaqat_project.jpg" alt="PayFlow" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">FINTECH</div> -->
+        <div class="project-overlay">
+  <a href="https://safaqat.om/" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Safaqat Website & App</div>
+          <div class="project-tags">
+            <span class="project-tag">e-commerce</span>
+            <span class="project-tag">Mobile</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+    <div class="project-card proj-3 reveal reveal-delay-2">
+      <div class="project-thumb">
+        <img src="images/seaflux_project.jpg" alt="TaskFlow" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">SAAS</div> -->
+        <div class="project-overlay">
+  <a href="https://seaflux.tech/" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Seaflux Website</div>
+          <div class="project-tags">
+            <span class="project-tag">IT</span>
+            <span class="project-tag">AI & ML</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+    <div class="project-card proj-4 reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="images/healthcare_app.jpg" alt="ShopEase" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">ECOM</div> -->
+        <div class="project-overlay">
+  <a href="https://www.figma.com/design/GOdxMUQMuKB6cJNtRx7UJ3/Nearest_Doctor--Health_Care--Sufiyan?node-id=251-6&t=Ia6X25GMAx6Hkuht-1" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Find Doctor App</div>
+          <div class="project-tags">
+            <span class="project-tag">Healthcare</span>
+            <span class="project-tag">Mobile</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+    
+
+    <div class="project-card proj-5 reveal reveal-delay-2">
+      <div class="project-thumb">
+        <img src="images/binham_website.jpg" alt="LearnSpace" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">EDTECH</div> -->
+        <div class="project-overlay">
+  <a href="https://binhamgroup.com/en/home//" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Bin Ham Website</div>
+          <div class="project-tags">
+            <span class="project-tag">Real Estate</span>
+            <span class="project-tag">Web</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+    <div class="project-card proj-6 reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="images/dashboard_website.jpg" alt="ShopEase" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">ECOM</div> -->
+        <div class="project-overlay">
+  <a href="https://corporate.safaqat.om/sign-in" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Safaqat Dashboard</div>
+          <div class="project-tags">
+            <span class="project-tag">ERP System</span>
+            <span class="project-tag">Dashboard</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+    <div class="project-card proj-7 reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="images/Reactive Next_website.jpg" alt="ShopEase" class="project-thumb-img" />
+        <!-- <div class="project-thumb-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Project Image</span>
+        </div>
+        <div class="project-thumb-label">ECOM</div> -->
+        <div class="project-overlay">
+  <a href="https://reactiveplumbing.co.uk/" target="_blank" rel="noopener noreferrer">
+    <div class="project-view-btn">View Live Project →</div>
+  </a>
+</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-name">Reactive Next Website</div>
+          <div class="project-tags">
+            <span class="project-tag">e-commerce</span>
+            <span class="project-tag">Mobile</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="section-label reveal">What I Do</div>
+  <h2 class="section-title reveal">Services that <em>make impact</em></h2>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">🎨</div>
+      <div class="service-name">UI/UX Design</div>
+      <p class="service-desc">End-to-end interface design for web and mobile — wireframes, high-fidelity mockups, and interactive prototypes that delight users and drive conversion.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">🔬</div>
+      <div class="service-name">User Research</div>
+      <p class="service-desc">Deep-dive research sessions, usability testing, and data synthesis that uncover real pain points and turn insights directly into design decisions.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">⚡</div>
+      <div class="service-name">Design Systems</div>
+      <p class="service-desc">Scalable Figma-based design systems — components, variants, auto layout, tokens — that keep your product consistent and your team moving fast.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-icon">📱</div>
+      <div class="service-name">Mobile Design</div>
+      <p class="service-desc">Pixel-perfect responsive mobile app design for iOS and Android, with proper platform conventions and seamless cross-device experiences.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-icon">🔄</div>
+      <div class="service-name">Product Strategy</div>
+      <p class="service-desc">Translating complex business goals into clear product roadmaps, user flows, and IA structures that align stakeholder needs with user expectations.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-icon">🤝</div>
+      <div class="service-name">Design Consultation</div>
+      <p class="service-desc">Expert UX audits, design reviews, and strategic consultation to level up your existing product, team workflow, or design process.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-label reveal">How I Work</div>
+  <h2 class="section-title reveal">My design <em>process</em></h2>
+  <div class="process-list">
+    <div class="process-item reveal">
+      <div class="process-step">01</div>
+      <div class="process-name">Discover & Research</div>
+      <div class="process-desc">I start by understanding your users, business goals, and market context. User interviews, competitive analysis, and empathy mapping establish a solid foundation before any pixels are moved.</div>
+    </div>
+    <div class="process-item reveal">
+      <div class="process-step">02</div>
+      <div class="process-name">Define & Strategize</div>
+      <div class="process-desc">Synthesizing research into actionable insights — user personas, journey maps, problem statements, and clear design principles that guide every decision forward.</div>
+    </div>
+    <div class="process-item reveal">
+      <div class="process-step">03</div>
+      <div class="process-name">Wireframe & Prototype</div>
+      <div class="process-desc">Rapid low-fidelity wireframes evolve into interactive prototypes. I validate concepts early and often, reducing expensive rework during development.</div>
+    </div>
+    <div class="process-item reveal">
+      <div class="process-step">04</div>
+      <div class="process-name">Design & Refine</div>
+      <div class="process-desc">High-fidelity UI design with meticulous attention to typography, color, motion, and accessibility — crafting every detail to be both beautiful and functional.</div>
+    </div>
+    <div class="process-item reveal">
+      <div class="process-step">05</div>
+      <div class="process-name">Test & Deliver</div>
+      <div class="process-desc">Usability testing, iteration, and a clean developer handoff with annotated specs, design tokens, and a Figma file that developers actually love to use.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section">
+  <div class="section-label reveal">Kind Words</div>
+  <h2 class="section-title reveal">What clients <em>say</em></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="quote-icon">"</div>
+      <p class="testimonial-text">Sufiyan has an incredible ability to translate vague requirements into elegant, user-friendly interfaces. His work on our healthcare dashboard transformed how patients interact with their data.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">RK</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">anonymous.</div>
+          <div class="author-role">Product Manager, HealthTech Startup</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="quote-icon">"</div>
+      <p class="testimonial-text">Working with Sufiyan was seamless. His deep understanding of design systems saved us weeks of inconsistency issues across our SaaS platform. Highly recommend.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">PS</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">Soheb M</div>
+          <div class="author-role">CEO, Zesty Solution</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="quote-icon">"</div>
+      <p class="testimonial-text">Sufiyan brings both creative flair and analytical rigor to every project. His user research insights were eye-opening and directly improved our product's retention metrics.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">AM</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">MR</div>
+          <div class="author-role">Founder, Seafluxs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-grid">
+    <div class="faq-sidebar reveal">
+      <div class="section-label">FAQ</div>
+      <h3><strong>Your questions,</strong> honestly answered.</h3>
+      <p>Got something specific in mind? Reach out and I'll get back to you within 24 hours.</p>
+      <div style="margin-top: 30px;">
+        <a href="mailto:sufiyanchhipa2600@gmail.com" class="btn-primary">Ask Me Directly →</a>
+      </div>
+    </div>
+    <div class="faq-list reveal reveal-delay-1">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What does your design process look like?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>I follow a 5-stage process: Discover → Define → Wireframe → Design → Test & Deliver. Each stage has clear deliverables and checkpoints. I keep clients closely involved throughout so there are never any surprises at handoff.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What tools do you use?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Figma is my primary tool for everything from wireframes to final handoff, including design systems with Auto Layout, Components, and Variants. I also use Adobe Photoshop, Adobe Illustrator, and Framer for specific needs.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How long does a typical project take?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>It depends on scope. A landing page redesign might take 1–2 weeks. A full product design (mobile app or SaaS platform) typically runs 4–8 weeks. I'll give you a clear timeline estimate after our initial discovery call.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you work with startups or enterprise?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Both! I've worked across healthcare, fintech, SaaS, EdTech, and e-commerce — from early-stage startups defining their MVP to established companies redesigning complex enterprise products.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What do you need from me to get started?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A brief about your product, your target users, business goals, and any existing assets. A 30-minute discovery call is ideal. From there I'll draft a proposal with scope, timeline, and cost.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Are you available for freelance work?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! I take on freelance projects alongside my full-time role. Reach out via email or LinkedIn and let's discuss your project. I'm selective about what I take on to ensure quality, so the sooner you get in touch the better.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band reveal">
+  <h2>LET'S BUILD SOMETHING GREAT TOGETHER</h2>
+  <a href="mailto:sufiyanchhipa2600@gmail.com">Start a Project →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">
+  <img src="images/Sufiyan UX.svg" alt="Sufiyan UX" height="36" />
+</a>
+      <p>UI/UX & Product Designer turning complex problems into clean, user-centered digital experiences.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sufiyan-makhiwala-b2a51b249/?skipRedirect=true" target="_blank" class="social-link" title="LinkedIn" >in</a>
+        <a href="mailto:sufiyanchhipa2600@gmail.com" class="social-link" title="Email" target="_blank">✉</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:sufiyanchhipa2600@gmail.com">sufiyanchhipa2600@gmail.com</a></li>
+        <li><a href="tel:+919726503619">+91 97265 03619</a></li>
+        <li><a href="https://drive.google.com/file/d/1Z8tgqDYv7sQNuyflXlT3SazOyfFnOv92/view?usp=sharing" target="_blank">Download Resume</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Sufiyan Makhiwala. All rights reserved.</span>
+    <span>Designed by Sufiyan Makhiwala</span>
+  </div>
+</footer>
+
+<script>
+  // CURSOR
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursorFollower');
+  let mx = 0, my = 0, fx = 0, fy = 0;
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
+  });
+  (function animFollower() {
+    fx += (mx - fx) * 0.12;
+    fy += (my - fy) * 0.12;
+    follower.style.transform = `translate(${fx - 18}px, ${fy - 18}px)`;
+    requestAnimationFrame(animFollower);
+  })();
+
+  // NAV SCROLL
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // HAMBURGER
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // SCROLL REVEAL
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // PROJECT CARD TILT
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `translateY(-6px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+</script>
+</body>
+</html>
