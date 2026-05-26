@@ -906,7 +906,13 @@ footer {
   .process-item { grid-template-columns: 60px 1fr; }
   .process-desc { grid-column: 2; }
   .projects-header { flex-direction: column; align-items: flex-start; gap: 20px; }
-  .whatsapp-float { bottom: 80px; right: 16px; width: 48px; height: 48px; }
+  .whatsapp-float { 
+  position: fixed !important; 
+  bottom: 24px !important; 
+  right: 16px !important; 
+  width: 48px !important; 
+  height: 48px !important; 
+}
 }
 
 /* ══════════════════════════════════════════
