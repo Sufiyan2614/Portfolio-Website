@@ -915,8 +915,8 @@ footer {
 /* ── WHATSAPP FLOATING BUTTON ── */
 .whatsapp-float {
   position: fixed;
-  bottom: 90px;
-  right: 28px;
+  bottom: 32px;
+  right: 32px;
   width: 56px;
   height: 56px;
   background: #25d366;
