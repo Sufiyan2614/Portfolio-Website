@@ -26,7 +26,7 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-follower" id="cursorFollower"></div>
 
-<!-- <!-- STICKY CTA -->
+<!-- STICKY CTA -->
 <!-- <a href="https://wa.me/919726503619?text=Hi%20Sufiyan%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" class="sticky-cta" aria-label="Book a Call on WhatsApp">
   <span class="sticky-cta-icon">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -296,14 +296,13 @@
       </div>
     </div>
 
-    <div class="project-card proj-3 reveal reveal-delay-1">
+    <div class="project-card proj-3 reveal reveal-delay-1" onclick="openCase('seaflux')">
+      <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
         <img src="images/seaflux_project.jpg" alt="Seaflux Technology Website" class="project-thumb-img" />
         <div class="project-overlay">
-  <a href="https://seaflux.tech/" target="_blank" rel="noopener noreferrer">
-    <div class="project-view-btn">View Live Project →</div>
-  </a>
-</div>
+          <div class="project-view-btn">View Case Study →</div>
+        </div>
       </div>
       <div class="project-info">
         <div>
@@ -317,14 +316,13 @@
       </div>
     </div>
 
-    <div class="project-card proj-5 reveal reveal-delay-1">
+    <div class="project-card proj-5 reveal reveal-delay-1" onclick="openCase('binham')">
+      <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
         <img src="images/binham_website.jpg" alt="Bin Ham Real Estate Group Website" class="project-thumb-img" />
         <div class="project-overlay">
-  <a href="https://binhamgroup.com/en/home//" target="_blank" rel="noopener noreferrer">
-    <div class="project-view-btn">View Live Project →</div>
-  </a>
-</div>
+          <div class="project-view-btn">View Case Study →</div>
+        </div>
       </div>
       <div class="project-info">
         <div>
@@ -338,14 +336,13 @@
       </div>
     </div>
 
-    <div class="project-card proj-6 reveal reveal-delay-2">
+    <div class="project-card proj-6 reveal reveal-delay-2" onclick="openCase('dashboard')">
+      <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
         <img src="images/dashboard_website.jpg" alt="Safaqat Corporate ERP Dashboard" class="project-thumb-img" />
         <div class="project-overlay">
-  <a href="https://corporate.safaqat.om/sign-in" target="_blank" rel="noopener noreferrer">
-    <div class="project-view-btn">View Live Project →</div>
-  </a>
-</div>
+          <div class="project-view-btn">View Case Study →</div>
+        </div>
       </div>
       <div class="project-info">
         <div>
@@ -359,14 +356,13 @@
       </div>
     </div>
 
-    <div class="project-card proj-7 reveal reveal-delay-1">
+    <div class="project-card proj-7 reveal reveal-delay-1" onclick="openCase('reactive')">
+      <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
         <img src="images/Reactive Next_website.jpg" alt="Reactive Next Plumbing Services Website" class="project-thumb-img" />
         <div class="project-overlay">
-  <a href="https://reactiveplumbing.co.uk/" target="_blank" rel="noopener noreferrer">
-    <div class="project-view-btn">View Live Project →</div>
-  </a>
-</div>
+          <div class="project-view-btn">View Case Study →</div>
+        </div>
       </div>
       <div class="project-info">
         <div>
@@ -668,6 +664,358 @@
           <div class="case-outcome-card">
             <div class="case-outcome-num">↑ Clarity</div>
             <p>Symptom-first search design validated positively in prototype testing — users found a relevant doctor within 30 seconds in sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Seaflux Case Study -->
+<div class="case-modal" id="case-seaflux" role="dialog" aria-modal="true" aria-label="Seaflux Case Study">
+  <div class="case-modal-overlay" onclick="closeCase()"></div>
+  <div class="case-modal-panel">
+    <button class="case-modal-close" onclick="closeCase()" aria-label="Close">✕</button>
+    <div class="case-modal-content">
+      <div class="case-header">
+        <span class="case-tag">IT · AI & ML · Web</span>
+        <h2 class="case-title">Seaflux Website</h2>
+        <p class="case-subtitle">Redesigning a technology company's website to better communicate their AI & ML services and convert enterprise clients.</p>
+        <a href="https://seaflux.tech/" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:16px;">View Live Site →</a>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📋 Project Overview</h3>
+        <div class="case-meta-row">
+          <div class="case-meta-item"><strong>Role</strong><span>Lead UI/UX Designer</span></div>
+          <div class="case-meta-item"><strong>Duration</strong><span>6 weeks</span></div>
+          <div class="case-meta-item"><strong>Tools</strong><span>Figma</span></div>
+          <div class="case-meta-item"><strong>Platform</strong><span>Web (Responsive)</span></div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🎯 Business Challenge</h3>
+        <p class="case-body">Seaflux, an AI & ML technology company, had a website that didn't reflect their technical expertise. Potential enterprise clients couldn't quickly understand their service offerings, and the lack of clear case studies and credibility signals was costing them leads.</p>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🔍 Research & User Pain Points</h3>
+        <ul class="case-list">
+          <li>Visitors couldn't distinguish Seaflux's services from generic IT companies</li>
+          <li>No clear service hierarchy — everything felt equally important</li>
+          <li>Missing social proof — no client logos, no project outcomes</li>
+          <li>Contact flow was buried, making it hard for leads to get in touch</li>
+        </ul>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🗺 User Flow</h3>
+        <div class="case-flow">
+          <div class="flow-step">Land on Homepage</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Browse Services</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">View Case Studies</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Contact / Book Call</div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">✏️ Design Decisions</h3>
+        <div class="case-decisions">
+          <div class="case-decision-item">
+            <strong>Service-first homepage</strong>
+            <p>Restructured the homepage to lead with core service pillars — AI, ML, and custom development — with clear value propositions for each.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Trust signals</strong>
+            <p>Added client logos, technology stack badges, and project outcome numbers above the fold to immediately establish credibility.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Dark tech aesthetic</strong>
+            <p>Adopted a modern dark theme with subtle gradients to visually communicate technical sophistication aligned with their brand.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Sticky CTA</strong>
+            <p>Persistent "Book a Call" button across all pages ensured the conversion path was always one click away for interested visitors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📈 Outcome</h3>
+        <div class="case-outcomes">
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Clarity</div>
+            <p>Service offerings clearly communicated within seconds of landing on the homepage</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Trust</div>
+            <p>Client logos and tech stack badges added credibility for enterprise prospects</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Leads</div>
+            <p>Streamlined contact flow contributed to improved lead generation post-launch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bin Ham Case Study -->
+<div class="case-modal" id="case-binham" role="dialog" aria-modal="true" aria-label="Bin Ham Case Study">
+  <div class="case-modal-overlay" onclick="closeCase()"></div>
+  <div class="case-modal-panel">
+    <button class="case-modal-close" onclick="closeCase()" aria-label="Close">✕</button>
+    <div class="case-modal-content">
+      <div class="case-header">
+        <span class="case-tag">Real Estate · Web</span>
+        <h2 class="case-title">Bin Ham Group Website</h2>
+        <p class="case-subtitle">Designing a premium digital presence for one of Oman's leading real estate groups — communicating trust, scale, and luxury.</p>
+        <a href="https://binhamgroup.com/en/home/" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:16px;">View Live Site →</a>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📋 Project Overview</h3>
+        <div class="case-meta-row">
+          <div class="case-meta-item"><strong>Role</strong><span>Lead UI/UX Designer</span></div>
+          <div class="case-meta-item"><strong>Duration</strong><span>8 weeks</span></div>
+          <div class="case-meta-item"><strong>Tools</strong><span>Figma, Adobe Illustrator</span></div>
+          <div class="case-meta-item"><strong>Platform</strong><span>Web (Responsive)</span></div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🎯 Business Challenge</h3>
+        <p class="case-body">Bin Ham Group needed a website that reflected their position as a premium real estate brand in Oman. The existing site felt outdated and didn't convey the scale of their portfolio or the quality of their developments — losing potential buyers and investors at first impression.</p>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🔍 Research & User Pain Points</h3>
+        <ul class="case-list">
+          <li>High-net-worth visitors expected a luxury feel — the old site felt generic</li>
+          <li>Property listings were hard to filter and compare</li>
+          <li>No clear investor-facing section despite a large investor audience</li>
+          <li>Mobile experience was broken, losing a significant portion of visitors</li>
+        </ul>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🗺 User Flow</h3>
+        <div class="case-flow">
+          <div class="flow-step">Homepage</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Browse Properties</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Property Detail</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Contact / Enquire</div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">✏️ Design Decisions</h3>
+        <div class="case-decisions">
+          <div class="case-decision-item">
+            <strong>Luxury visual language</strong>
+            <p>Used large full-bleed imagery, refined typography, and generous white space to communicate premium quality from the first scroll.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Dual audience architecture</strong>
+            <p>Separated buyer and investor journeys clearly in navigation — each audience gets a tailored path without feeling lost.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Property filter system</strong>
+            <p>Designed an intuitive filter UI allowing users to sort by location, type, size, and price range without page reloads.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Mobile-first rebuild</strong>
+            <p>Completely redesigned the mobile experience with proper image loading, touch-friendly filters, and a sticky enquiry CTA.</p>
+          </div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📈 Outcome</h3>
+        <div class="case-outcomes">
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">Premium</div>
+            <p>Visual language aligned with luxury real estate standards, elevating brand perception significantly</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">Mobile ✓</div>
+            <p>Fully responsive experience built from scratch replacing a previously broken mobile layout</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Enquiries</div>
+            <p>Clearer property pages and persistent enquiry CTA contributed to improved lead capture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Safaqat Dashboard Case Study -->
+<div class="case-modal" id="case-dashboard" role="dialog" aria-modal="true" aria-label="Safaqat Dashboard Case Study">
+  <div class="case-modal-overlay" onclick="closeCase()"></div>
+  <div class="case-modal-panel">
+    <button class="case-modal-close" onclick="closeCase()" aria-label="Close">✕</button>
+    <div class="case-modal-content">
+      <div class="case-header">
+        <span class="case-tag">ERP · Dashboard · Web</span>
+        <h2 class="case-title">Safaqat Corporate Dashboard</h2>
+        <p class="case-subtitle">Designing a complex ERP dashboard for sellers and operations teams — making dense data workflows feel simple and fast.</p>
+        <a href="https://corporate.safaqat.om/sign-in" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:16px;">View Live →</a>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📋 Project Overview</h3>
+        <div class="case-meta-row">
+          <div class="case-meta-item"><strong>Role</strong><span>Lead UI/UX Designer</span></div>
+          <div class="case-meta-item"><strong>Duration</strong><span>10 weeks</span></div>
+          <div class="case-meta-item"><strong>Tools</strong><span>Figma</span></div>
+          <div class="case-meta-item"><strong>Platform</strong><span>Web (Desktop-first)</span></div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🎯 Business Challenge</h3>
+        <p class="case-body">Safaqat's corporate sellers needed a powerful dashboard to manage inventory, orders, and analytics — but the previous system was so complex that sellers required training just to complete basic tasks. The goal was to reduce operational friction without sacrificing functionality.</p>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🔍 Research & User Pain Points</h3>
+        <ul class="case-list">
+          <li>Sellers spent too much time navigating menus to find basic inventory functions</li>
+          <li>Order status updates required multiple clicks across different sections</li>
+          <li>Analytics were presented as raw tables — no visual summary for quick decisions</li>
+          <li>New sellers needed days of onboarding before becoming productive</li>
+        </ul>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🗺 User Flow</h3>
+        <div class="case-flow">
+          <div class="flow-step">Login</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Dashboard Overview</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Manage Orders / Inventory</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Analytics & Reports</div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">✏️ Design Decisions</h3>
+        <div class="case-decisions">
+          <div class="case-decision-item">
+            <strong>Summary-first dashboard</strong>
+            <p>Homepage shows key metrics at a glance — pending orders, low stock alerts, revenue today — so sellers know their priorities the moment they log in.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Flat navigation</strong>
+            <p>Reduced navigation depth from 4 levels to 2 — all primary actions accessible within 2 clicks maximum.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Visual analytics</strong>
+            <p>Replaced raw data tables with charts, sparklines, and trend indicators to help sellers make faster decisions without exporting to spreadsheets.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Guided onboarding</strong>
+            <p>Added a checklist-based onboarding flow for new sellers — reducing time-to-productivity significantly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📈 Outcome</h3>
+        <div class="case-outcomes">
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">2 clicks</div>
+            <p>All primary seller actions accessible within 2 clicks, down from 4+ levels of navigation</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↓ Training</div>
+            <p>Guided onboarding reduced seller setup time — new users productive without external training</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Clarity</div>
+            <p>Visual analytics replaced raw tables, enabling faster decision-making for sellers and managers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reactive Next Case Study -->
+<div class="case-modal" id="case-reactive" role="dialog" aria-modal="true" aria-label="Reactive Next Case Study">
+  <div class="case-modal-overlay" onclick="closeCase()"></div>
+  <div class="case-modal-panel">
+    <button class="case-modal-close" onclick="closeCase()" aria-label="Close">✕</button>
+    <div class="case-modal-content">
+      <div class="case-header">
+        <span class="case-tag">Services · Web</span>
+        <h2 class="case-title">Reactive Next Website</h2>
+        <p class="case-subtitle">Designing a clean, conversion-focused website for a UK-based plumbing and heating services company.</p>
+        <a href="https://reactiveplumbing.co.uk/" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:16px;">View Live Site →</a>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📋 Project Overview</h3>
+        <div class="case-meta-row">
+          <div class="case-meta-item"><strong>Role</strong><span>UI/UX Designer</span></div>
+          <div class="case-meta-item"><strong>Duration</strong><span>4 weeks</span></div>
+          <div class="case-meta-item"><strong>Tools</strong><span>Figma</span></div>
+          <div class="case-meta-item"><strong>Platform</strong><span>Web (Mobile-first)</span></div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🎯 Business Challenge</h3>
+        <p class="case-body">Reactive Next needed a website that converted visitors into booked jobs quickly. Most of their traffic comes from emergency searches on mobile — people with urgent plumbing issues who need to find and contact a reliable service in under a minute.</p>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🔍 Research & User Pain Points</h3>
+        <ul class="case-list">
+          <li>Users in emergency situations needed a phone number or booking form within seconds</li>
+          <li>Trust was the #1 concern — visitors wanted to see certifications and reviews immediately</li>
+          <li>Service area coverage was unclear, causing drop-off from out-of-area visitors</li>
+          <li>Previous site had no clear service list — users weren't sure what was offered</li>
+        </ul>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">🗺 User Flow</h3>
+        <div class="case-flow">
+          <div class="flow-step">Search / Land</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">See Service + Trust</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Call / Book</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Confirmation</div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">✏️ Design Decisions</h3>
+        <div class="case-decisions">
+          <div class="case-decision-item">
+            <strong>Phone number above fold</strong>
+            <p>The phone number and "Book Now" CTA are the first things visible on mobile — designed for emergency use cases where speed matters most.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Trust signals upfront</strong>
+            <p>Gas Safe certification, years of experience, and Google review rating placed immediately below the hero — addressing the #1 visitor concern before they scroll.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Clear service cards</strong>
+            <p>Each service (boiler repair, leak fixing, heating) given its own card with a clear description and direct booking link — no ambiguity about what's offered.</p>
+          </div>
+          <div class="case-decision-item">
+            <strong>Coverage map section</strong>
+            <p>Added a service area section showing which postcodes are covered — reducing drop-off from visitors outside the service zone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3 class="case-section-title">📈 Outcome</h3>
+        <div class="case-outcomes">
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">&lt;30s</div>
+            <p>Emergency visitors can find contact info and book within 30 seconds on mobile</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↑ Trust</div>
+            <p>Certifications and reviews above fold directly addressed the primary visitor hesitation</p>
+          </div>
+          <div class="case-outcome-card">
+            <div class="case-outcome-num">↓ Drop-off</div>
+            <p>Service area section reduced bounce from out-of-area visitors who previously left without clarity</p>
           </div>
         </div>
       </div>
