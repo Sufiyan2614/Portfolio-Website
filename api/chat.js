@@ -48,3 +48,13 @@ Keep answers to 2-4 sentences. Be warm and professional. Always end by encouragi
     return res.status(500).json({ error: 'Something went wrong', details: err.message });
   }
 }
+
+
+const data = await response.json();
+
+// ADD THIS temporarily to debug:
+if (data.error) {
+  console.error('Anthropic API error:', data.error);
+}
+
+return res.status(200).json(data);
