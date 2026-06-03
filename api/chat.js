@@ -15,7 +15,7 @@ module.exports = async function handler(req, res) {
         'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'google/gemma-3-4b-it:free',
+        model: 'mistralai/mistral-7b-instruct:free',
         max_tokens: 400,
         messages: [
           {
