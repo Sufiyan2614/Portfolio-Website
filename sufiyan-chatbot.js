@@ -11,7 +11,7 @@
   const style = document.createElement('style');
   style.textContent = `
     #sm-chat-toggle {
-      position: fixed; bottom: 32px; left: 32px;
+      position: fixed; bottom: 32px; right: 32px;
       width: 56px; height: 56px; background: var(--accent, #5700ef);
       border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center;
       z-index: 999; cursor: none; box-shadow: 0 4px 24px rgba(87,0,239,0.35);
