@@ -15,7 +15,7 @@ module.exports = async function handler(req, res) {
         'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'nvidia/llama-3.1-nemotron-70b-instruct:free',
+        model: 'nvidia/nemotron-3-super-120b-a12b:free',
         max_tokens: 400,
         messages: [
           {
