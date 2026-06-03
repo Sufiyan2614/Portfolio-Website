@@ -38,7 +38,7 @@ Keep answers to 2-4 sentences. Be warm and professional. Always end by encouragi
     });
 
     const data = await response.json();
-    const text = data.choices?.[0]?.message?.content || 'Please email Sufiyan at sufiyanchhipa2600@gmail.com!';
+const text = data.choices?.[0]?.message?.content || JSON.stringify(data);
     return res.status(200).json({ content: [{ text }] });
 
   } catch (err) {
