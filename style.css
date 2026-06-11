@@ -27,7 +27,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   cursor: none;
 }
@@ -103,7 +103,7 @@ nav.scrolled {
 }
 
 .nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 26px;
   letter-spacing: 2px;
   color: var(--text);
@@ -205,7 +205,7 @@ nav.scrolled {
 }
 .mobile-menu.open { display: flex; opacity: 1; }
 .mobile-menu a {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 52px; color: var(--text);
   text-decoration: none; letter-spacing: 2px;
   transition: color 0.2s;
@@ -264,9 +264,9 @@ nav.scrolled {
   50% { opacity: 0.5; transform: scale(0.7); }
 }
 .hero-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(80px, 13vw, 200px);
-  line-height: 0.9; letter-spacing: -2px;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(80px, 13vw, 150px);
+  line-height: 0.92; letter-spacing: -3px;
   overflow: hidden;
   color: var(--text);
   position: relative; z-index: 2;
@@ -358,7 +358,7 @@ nav.scrolled {
 .marquee-item {
   display: inline-flex; align-items: center; gap: 18px;
   padding: 0 30px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 18px; letter-spacing: 3px;
   color: rgba(255,255,255,0.75);
 }
@@ -375,9 +375,9 @@ section { padding: 100px 48px; }
 }
 .section-label::before { content: ''; width: 30px; height: 1px; background: var(--accent); }
 h2.section-title {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(36px, 5vw, 64px);
-  line-height: 1.1; font-weight: 400;
+  line-height: 1.1; font-weight: 700;
   margin-bottom: 16px;
   color: var(--text);
 }
@@ -404,7 +404,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 .about-initials {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 120px; color: rgba(87,0,239,0.06);
   letter-spacing: -4px;
   z-index: 2; pointer-events: none;
@@ -419,7 +419,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   animation: spinSlow 12s linear infinite;
   box-shadow: 0 8px 32px rgba(87,0,239,0.3);
 }
-.about-badge .num { font-family: 'Bebas Neue', sans-serif; font-size: 36px; line-height: 1; }
+.about-badge .num { font-family: 'Syne', sans-serif; font-size: 36px; line-height: 1; }
 .about-badge .lbl { font-size: 9px; letter-spacing: 1.5px; text-align: center; line-height: 1.3; }
 @keyframes spinSlow {
   from { transform: rotate(0deg); }
@@ -444,7 +444,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   padding-top: 40px; border-top: 1px solid var(--border);
 }
 .stat-num {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 48px; color: var(--text); line-height: 1;
 }
 .stat-num span { color: var(--accent); }
@@ -488,7 +488,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 }
 .project-card:hover .project-thumb-bg { transform: scale(1.05); }
 .project-thumb-label {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 72px; color: rgba(0,0,0,0.04);
   letter-spacing: -2px; z-index: 1; user-select: none;
 }
@@ -573,7 +573,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 }
 .service-card:hover { background: var(--accent-light); }
 .service-num {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 60px; color: var(--border); line-height: 1;
   margin-bottom: 24px; transition: color 0.3s;
 }
@@ -589,13 +589,37 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 .service-desc { font-size: 14px; color: var(--muted); line-height: 1.7; font-weight: 300; }
 
 /* ── PROCESS ── */
+/* ── PROCESS (SCROLL PINNED) ── */
+#process { padding: 0; }
+
+.process-sticky-wrapper {
+  height: 600vh;
+  position: relative;
+}
+
+.process-pinned {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.process-pinned .section-label { margin-bottom: 8px; }
+.process-pinned .section-title { margin-bottom: 0; }
+
 .process-wave-container {
   position: relative;
-  margin-top: 80px;
-  height: 420px;
+ margin-top: 180px;
+  height: 280px;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .process-svg {
@@ -604,15 +628,14 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   width: 100%; height: 60%;
 }
 
-.process-path {
+.process-path-bg {
   stroke: var(--accent);
-  opacity: 0.25;
-  /* remove strokeDasharray and strokeDashoffset from here */
-  /* JS handles it now */
+  opacity: 0.1;
 }
 
-@keyframes drawPath {
-  to { stroke-dashoffset: 0; }
+.process-path {
+  stroke: var(--accent);
+  opacity: 0.9;
 }
 
 .process-nodes {
@@ -627,7 +650,11 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
+
+.process-node-wrap.active { opacity: 1; }
 
 .process-node {
   width: 48px; height: 48px;
@@ -635,32 +662,39 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   background: var(--bg);
   border: 2px solid var(--accent);
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 16px;
   color: var(--accent);
   position: relative;
   z-index: 2;
-  transition: background 0.3s, color 0.3s;
-  cursor: default;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
-.process-node-wrap:hover .process-node {
+.process-node-wrap.active .process-node {
+  animation: nodePop 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+@keyframes nodePop {
+  0%   { transform: scale(0.4); }
+  100% { transform: scale(1); }
+}
+
+.process-node-wrap.active.current .process-node {
   background: var(--accent);
   color: #fff;
+  box-shadow: 0 0 0 6px rgba(87,0,239,0.15);
 }
 
 .process-node-content {
   position: absolute;
   width: 180px;
   text-align: center;
+  transition: opacity 0.4s 0.15s;
 }
 
-.process-node-content.bottom {
-  top: calc(100% + 16px);
-}
-
+.process-node-content.bottom { top: calc(100% + 16px); }
 .process-node-content.top {
-  bottom: calc(100% + 16px);
+ bottom: calc(100% + 16px);
 }
 
 .process-name {
@@ -678,7 +712,32 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   font-weight: 300;
 }
 
+.process-scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  animation: hintBob 1.8s ease-in-out infinite;
+  transition: opacity 0.4s;
+}
+
+.process-scroll-hint.hidden { opacity: 0; pointer-events: none; }
+
+@keyframes hintBob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(5px); }
+}
+
 @media (max-width: 768px) {
+  .process-sticky-wrapper { height: auto; }
+  .process-pinned { position: relative; height: auto; padding: 60px 24px; }
   .process-wave-container { display: none; }
 }
 
@@ -721,7 +780,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   font-weight: 600;
 }
 .ps-title {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px; font-weight: 400; line-height: 1.3;
   color: var(--text); margin-bottom: 14px;
 }
@@ -754,7 +813,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 }
 .ps-stat-item:last-child { border-right: none; }
 .ps-stat-num {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 52px; color: #fff; line-height: 1;
 }
 .ps-stat-num span { color: rgba(255,255,255,0.6); }
@@ -779,7 +838,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 .testimonial-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 8px 30px rgba(87,0,239,0.08); }
 .quote-icon {
   font-size: 36px; color: var(--accent);
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1; margin-bottom: 16px;
 }
 .testimonial-text {
@@ -805,7 +864,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   gap: 60px; margin-top: 60px; align-items: start;
 }
 .faq-sidebar h3 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 28px; font-weight: 400;
   line-height: 1.4; color: var(--muted);
 }
@@ -823,7 +882,7 @@ h2.section-title em { font-style: italic; color: var(--accent); }
   padding: 22px 0; font-size: 15px; font-weight: 500;
   cursor: none;
   display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  font-family: 'DM Sans', sans-serif; transition: color 0.2s;
+  font-family: 'Poppins', sans-serif; transition: color 0.2s;
 }
 .faq-question:hover { color: var(--accent); }
 .faq-icon {
@@ -855,12 +914,12 @@ h2.section-title em { font-style: italic; color: var(--accent); }
 .cta-band::before {
   content: 'HIRE ME';
   position: absolute; right: -20px; top: 50%; transform: translateY(-50%);
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 200px; color: rgba(255,255,255,0.07);
   white-space: nowrap; pointer-events: none; line-height: 1;
 }
 .cta-band h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(40px, 6vw, 80px);
   color: #fff; line-height: 1;
   letter-spacing: -1px; max-width: 600px;
@@ -1010,7 +1069,7 @@ footer {
   box-shadow: 0 8px 32px rgba(87,0,239,0.45);
 }
 .sticky-cta-icon { display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.sticky-cta-text { font-family: 'DM Sans', sans-serif; }
+.sticky-cta-text { font-family: 'Poppins', sans-serif; }
 
 /* ── STORY / PERSONALITY SECTION ── */
 .story-section {
@@ -1054,7 +1113,7 @@ footer {
   font-weight: 500;
   color: var(--text);
   margin-bottom: 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .story-text {
   font-size: 15px;
@@ -1142,7 +1201,7 @@ footer {
   display: block;
 }
 .case-title {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 400;
   color: var(--text);
@@ -1159,7 +1218,7 @@ footer {
 
 .case-section { margin-bottom: 44px; }
 .case-section-title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
@@ -1283,7 +1342,7 @@ footer {
   text-align: center;
 }
 .case-outcome-num {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 28px;
   color: #fff;
   margin-bottom: 10px;
