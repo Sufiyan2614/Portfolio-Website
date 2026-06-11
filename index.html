@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>if(localStorage.getItem("theme")==="dark")document.documentElement.classList.add("dark");</script>
+
 </head>
 <body>
 
@@ -53,14 +53,6 @@
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <a href="https://drive.google.com/file/d/1Z8tgqDYv7sQNuyflXlT3SazOyfFnOv92/view?usp=sharing" target="_blank" class="nav-cta">Download Resume →</a>
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-    <span class="theme-toggle-track">
-      <span class="theme-toggle-thumb">
-        <span class="toggle-icon-sun">☀️</span>
-        <span class="toggle-icon-moon">🌙</span>
-      </span>
-    </span>
-  </button>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -75,14 +67,11 @@
   <a href="#problem-solving" onclick="closeMobile()">Problem Solving</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
   <a href="mailto:sufiyanchhipa2600@gmail.com" onclick="closeMobile()" style="color:var(--accent)">Contact</a>
-  <button class="mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle dark mode">
-    <span class="mobile-toggle-icon" id="mobileToggleIcon">☀️</span>
-    <span class="mobile-toggle-label" id="mobileToggleLabel">Switch to Dark</span>
-  </button>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <canvas class="hero-checker" id="heroChecker"></canvas>
   <div class="hero-tag">
     <span class="hero-tag-dot"></span>
     Available for Freelance · Based in India
@@ -104,7 +93,6 @@
     scroll
   </div>
 </section>
-
 <!-- MARQUEE -->
 <div class="marquee-section">
   <div class="marquee-track">
@@ -252,7 +240,7 @@
       </div>
     </div>
 
-    <!-- E-COMMERCE — Case Study (Confidential) -->
+    <! E-COMMERCE — Case Study (Confidential) -->
     <!-- <div class="project-card proj-2 reveal reveal-delay-1" onclick="openCase('safaqat')">
       <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
@@ -1087,7 +1075,7 @@
     <div class="service-card">
       <div class="service-num">06</div>
       <div class="service-icon-wrap">
-        <img src="images/mentorship.gif" width="50" height="50" viewBox="0 0 34 34" fill="none">
+        <img src="images/me.gif" width="50" height="50" viewBox="0 0 34 34" fill="none">
       </div>
       <div class="service-name">Design Consultation</div>
       <p class="service-desc">Expert UX audits, design reviews, and strategic consultation to level up your existing product, team workflow, or design process.</p>
@@ -1100,31 +1088,62 @@
 <section id="process">
   <div class="section-label reveal">How I Work</div>
   <h2 class="section-title reveal">My design <em>process</em></h2>
-  <div class="process-list">
-    <div class="process-item reveal">
-      <div class="process-step">01</div>
-      <div class="process-name">Discover & Research</div>
-      <div class="process-desc">I start by understanding your users, business goals, and market context. User interviews, competitive analysis, and empathy mapping establish a solid foundation before any pixels are moved.</div>
-    </div>
-    <div class="process-item reveal">
-      <div class="process-step">02</div>
-      <div class="process-name">Define & Strategize</div>
-      <div class="process-desc">Synthesizing research into actionable insights — user personas, journey maps, problem statements, and clear design principles that guide every decision forward.</div>
-    </div>
-    <div class="process-item reveal">
-      <div class="process-step">03</div>
-      <div class="process-name">Wireframe & Prototype</div>
-      <div class="process-desc">Rapid low-fidelity wireframes evolve into interactive prototypes. I validate concepts early and often, reducing expensive rework during development.</div>
-    </div>
-    <div class="process-item reveal">
-      <div class="process-step">04</div>
-      <div class="process-name">Design & Refine</div>
-      <div class="process-desc">High-fidelity UI design with meticulous attention to typography, color, motion, and accessibility — crafting every detail to be both beautiful and functional.</div>
-    </div>
-    <div class="process-item reveal">
-      <div class="process-step">05</div>
-      <div class="process-name">Test & Deliver</div>
-      <div class="process-desc">Usability testing, iteration, and a clean developer handoff with annotated specs, design tokens, and a Figma file that developers actually love to use.</div>
+
+  <div class="process-wave-container reveal">
+    <svg class="process-svg" viewBox="0 0 1200 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="process-path" d="M 0,240 C 150,240 150,80 300,80 C 450,80 450,240 600,240 C 750,240 750,80 900,80 C 1050,80 1050,240 1200,240" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+
+    <div class="process-nodes">
+      <div class="process-node-wrap" style="left:0%; top: calc(75% - 24px);">
+        <div class="process-node">
+          <span>01</span>
+        </div>
+        <div class="process-node-content bottom">
+          <div class="process-name">Discover & Research</div>
+          <div class="process-desc">User interviews, competitive analysis, and empathy mapping before any pixels move.</div>
+        </div>
+      </div>
+
+      <div class="process-node-wrap" style="left:25%; top: calc(25% - 24px);">
+        <div class="process-node">
+          <span>02</span>
+        </div>
+        <div class="process-node-content top">
+          <div class="process-name">Define & Strategize</div>
+          <div class="process-desc">Personas, journey maps, and design principles from synthesized research.</div>
+        </div>
+      </div>
+
+      <div class="process-node-wrap" style="left:50%; top: calc(75% - 24px);">
+        <div class="process-node">
+          <span>03</span>
+        </div>
+        <div class="process-node-content bottom">
+          <div class="process-name">Wireframe & Prototype</div>
+          <div class="process-desc">Low-fi wireframes to interactive prototypes — validated early, iterated fast.</div>
+        </div>
+      </div>
+
+      <div class="process-node-wrap" style="left:75%; top: calc(25% - 24px);">
+        <div class="process-node">
+          <span>04</span>
+        </div>
+        <div class="process-node-content top">
+          <div class="process-name">Design & Refine</div>
+          <div class="process-desc">High-fidelity UI with typography, motion, color, and accessibility built in.</div>
+        </div>
+      </div>
+
+      <div class="process-node-wrap" style="left:100%; top: calc(75% - 24px);">
+        <div class="process-node">
+          <span>05</span>
+        </div>
+        <div class="process-node-content bottom">
+          <div class="process-name">Test & Deliver</div>
+          <div class="process-desc">Usability testing, iteration, and a clean developer handoff with annotated Figma specs.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1242,6 +1261,19 @@
       </div>
     </div>
     <div class="testimonial-card reveal reveal-delay-1">
+      <div class="quote-icon">"</div>
+      <p class="testimonial-text">Working with Sufiyan was seamless. His deep understanding of design systems saved us weeks of inconsistency issues across our SaaS platform. He didn't just deliver screens — he delivered a system our entire team could build on. Highly recommend.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">MR</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">Mohammed Rashid</div>
+          <div class="author-role">Founder, Seaflux Technologies</div>
+        </div>
+      </div>
+    </div>
+
+     <div class="testimonial-card reveal reveal-delay-1">
       <div class="quote-icon">"</div>
       <p class="testimonial-text">Working with Sufiyan was seamless. His deep understanding of design systems saved us weeks of inconsistency issues across our SaaS platform. He didn't just deliver screens — he delivered a system our entire team could build on. Highly recommend.</p>
       <div class="testimonial-author">
@@ -1437,35 +1469,77 @@
     });
   });
 
-  // THEME TOGGLE
-  const themeToggleBtn = document.getElementById('themeToggle');
-  const mobileThemeToggleBtn = document.getElementById('mobileThemeToggle');
-  const mobileToggleIcon = document.getElementById('mobileToggleIcon');
-  const mobileToggleLabel = document.getElementById('mobileToggleLabel');
-  const html = document.documentElement;
+  // HERO CHECKER ANIMATION
+  (function() {
+    const canvas = document.getElementById('heroChecker');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const SIZE = 50;
+    let cols, rows, W, H, animFrame, startTime = null;
 
-  const saved = localStorage.getItem('theme');
-  if (saved === 'dark') {
-    html.classList.add('dark');
-    themeToggleBtn.classList.add('dark');
-  }
-  updateMobileLabel();
+    function resize() {
+      W = canvas.width  = canvas.offsetWidth;
+      H = canvas.height = canvas.offsetHeight;
+      cols = Math.ceil(W / SIZE) + 2;
+      rows = Math.ceil(H / SIZE) + 2;
+    }
 
-  function updateMobileLabel() {
-    const isDark = html.classList.contains('dark');
-    mobileToggleIcon.textContent = isDark ? '🌙' : '☀️';
-    mobileToggleLabel.textContent = isDark ? 'Switch to Light' : 'Switch to Dark';
-  }
+    function draw(ts) {
+      if (!startTime) startTime = ts;
+      const t = (ts - startTime) / 1000;
+      ctx.clearRect(0, 0, W, H);
 
-  function toggleTheme() {
-    const isDark = html.classList.toggle('dark');
-    themeToggleBtn.classList.toggle('dark', isDark);
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    updateMobileLabel();
-  }
+      const cx = cols / 2;
+      const cy = rows / 2;
 
-  themeToggleBtn.addEventListener('click', toggleTheme);
-  mobileThemeToggleBtn.addEventListener('click', () => { toggleTheme(); closeMobile(); });
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          if ((r + c) % 2 !== 0) continue;
+
+          const dx = c - cx;
+          const dy = r - cy;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          // Wave ripple from center + time offset
+          const wave = Math.sin(dist * 0.55 - t * 1.8) * 0.5 + 0.5;
+          // Secondary slower wave
+          const wave2 = Math.sin(dist * 0.3 - t * 0.9 + 1.2) * 0.5 + 0.5;
+          const combined = wave * 0.65 + wave2 * 0.35;
+
+          const alpha = combined * 0.55;
+          if (alpha < 0.015) continue;
+
+          // Scale each cell with the wave
+          const scale = 0.5 + combined * 0.5;
+          const s = SIZE * scale;
+          const offset = (SIZE - s) / 2;
+          const x = c * SIZE + offset;
+          const y = r * SIZE + offset;
+
+          // Color: interpolate from light purple to deep accent
+          const r1 = 130, g1 = 60, b1 = 255; // light purple
+          const r2 = 87,  g2 = 0,  b2 = 239; // accent
+          const mix = combined;
+          const cr = Math.round(r1 + (r2 - r1) * mix);
+          const cg = Math.round(g1 + (g2 - g1) * mix);
+          const cb = Math.round(b1 + (b2 - b1) * mix);
+
+          ctx.save();
+          ctx.globalAlpha = alpha;
+          ctx.fillStyle = `rgb(${cr},${cg},${cb})`;
+          ctx.beginPath();
+          ctx.roundRect(x, y, s, s, Math.max(2, s * 0.18));
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+      animFrame = requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', () => { cancelAnimationFrame(animFrame); resize(); });
+    resize();
+    animFrame = requestAnimationFrame(draw);
+  })();
 
   // CASE STUDY MODAL
   function openCase(id) {
@@ -1481,5 +1555,57 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCase(); });
 </script>
   <script src="sufiyan-chatbot.js"></script>
+
+
+  <!-- your existing scripts above -->
+
+    <script>
+  const path = document.querySelector('.process-path');
+  if (path) {
+    const pathLength = path.getTotalLength();
+
+    path.style.animation = 'none';
+    path.style.strokeDasharray = pathLength;
+    path.style.strokeDashoffset = pathLength;
+
+    const section = document.querySelector('.process-wave-container');
+
+    window.addEventListener('scroll', () => {
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Start drawing when section enters viewport (top hits bottom of screen)
+      // Finish drawing when section has scrolled 1.5x viewport height past entry
+      const scrollRange = windowHeight * 1.5; // ← increase this to make it slower
+
+      const traveled = windowHeight - rect.top;
+      const progress = Math.min(Math.max(traveled / scrollRange, 0), 1);
+
+      path.style.strokeDashoffset = pathLength * (1 - progress);
+    });
+  }
+</script>
+
+<script>
+  function buildGrid(id, density) {
+  const wrap = document.getElementById(id);
+  const cols = 14, rows = 12;
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      const isChecker = (r + c) % 2 === 0;
+      if (isChecker && Math.random() < density) cell.classList.add('filled');
+      wrap.appendChild(cell);
+    }
+  }
+}
+
+buildGrid('grid1', 0.85);
+buildGrid('grid2', 0.5);
+buildGrid('grid3', 0.3);
+</script>
+  </body>
+</html>
 </body>
 </html>
