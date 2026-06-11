@@ -158,15 +158,15 @@
       </div>
       <div class="stats-row reveal reveal-delay-3">
         <div class="stat-item">
-          <div class="stat-num">10<span>+</span></div>
+          <div class="stat-num"><span class="count-up" data-target="10" data-suffix="+">10+</span></div>
           <div class="stat-lbl">Products Shipped</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">6<span>+</span></div>
+          <div class="stat-num"><span class="count-up" data-target="6" data-suffix="+">6+</span></div>
           <div class="stat-lbl">Industries</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-num"><span class="count-up" data-target="2" data-suffix="+">2+</span></div>
           <div class="stat-lbl">Years Experience</div>
         </div>
       </div>
@@ -1084,6 +1084,47 @@
   </div>
 </section>
 
+<!-- STICKY SCROLL TEXT-SWAP — Why Choose Me -->
+<section class="sticky-swap-section">
+  <div class="sticky-swap-inner">
+    <div class="sticky-swap-left">
+      <div class="section-label">Why Choose Me</div>
+      <h2 class="section-title sticky-swap-heading">The right <em>designer</em> for your next product</h2>
+      <p class="sticky-swap-sub">I don't just make things look good — I make them work. Every decision is grounded in user research, design principles, and a relentless focus on outcomes.</p>
+    </div>
+    <div class="sticky-swap-right">
+      <div class="sticky-swap-item">
+        <div class="swap-num">01</div>
+        <div class="swap-body">
+          <div class="swap-title">Research before pixels</div>
+          <div class="swap-desc">Every project starts with understanding users, not jumping into Figma. I map journeys, run interviews, and synthesize insights before a single frame is drawn — so design decisions are always backed by evidence, not assumptions.</div>
+        </div>
+      </div>
+      <div class="sticky-swap-item">
+        <div class="swap-num">02</div>
+        <div class="swap-body">
+          <div class="swap-title">Design that converts</div>
+          <div class="swap-desc">Beautiful UI is worthless if users drop off. I design with conversion funnels, heatmaps, and usability principles in mind — turning interfaces into experiences that guide users to take the right action at the right time.</div>
+        </div>
+      </div>
+      <div class="sticky-swap-item">
+        <div class="swap-num">03</div>
+        <div class="swap-body">
+          <div class="swap-title">Developer-ready handoff</div>
+          <div class="swap-desc">Annotated Figma files, component libraries, and design tokens that developers actually love. No guesswork, no back-and-forth — just a clean handoff that ships exactly as designed.</div>
+        </div>
+      </div>
+      <div class="sticky-swap-item">
+        <div class="swap-num">04</div>
+        <div class="swap-body">
+          <div class="swap-title">You're always in the loop</div>
+          <div class="swap-desc">Weekly check-ins, shared Figma links, and async updates mean you're never left wondering where your project is. Clear communication is as important to me as clean design.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROCESS -->
 <section id="process">
   <div class="process-sticky-wrapper">
@@ -1221,19 +1262,19 @@
 
   <div class="ps-stat-row reveal">
     <div class="ps-stat-item">
-      <div class="ps-stat-num">10<span>+</span></div>
+      <div class="ps-stat-num"><span class="count-up" data-target="10" data-suffix="+">10+</span></div>
       <div class="ps-stat-lbl">Problems Solved</div>
     </div>
     <div class="ps-stat-item">
-      <div class="ps-stat-num">2<span>+</span></div>
+      <div class="ps-stat-num"><span class="count-up" data-target="2" data-suffix="+">2+</span></div>
       <div class="ps-stat-lbl">Years of Practice</div>
     </div>
     <div class="ps-stat-item">
-      <div class="ps-stat-num">5<span>★</span></div>
+      <div class="ps-stat-num"><span class="count-up" data-target="5" data-suffix="★">5★</span></div>
       <div class="ps-stat-lbl">Client Satisfaction</div>
     </div>
     <div class="ps-stat-item">
-      <div class="ps-stat-num">6<span>+</span></div>
+      <div class="ps-stat-num"><span class="count-up" data-target="6" data-suffix="+">6+</span></div>
       <div class="ps-stat-lbl">Industries Served</div>
     </div>
   </div>
@@ -1438,11 +1479,7 @@
     document.body.style.overflow = '';
   }
 
-  // SCROLL REVEAL
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // SCROLL REVEAL — handled by improved observer below
 
   // FAQ
   function toggleFaq(btn) {
@@ -1552,6 +1589,69 @@
 </script>
   <script src="sufiyan-chatbot.js"></script>
 
+  <!-- ═══ THEFINCH ANIMATIONS ═══ -->
+
+  <!-- 1. COUNT-UP NUMBERS ON SCROLL -->
+  <script>
+  (function() {
+    const counters = document.querySelectorAll('.count-up');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.target;
+        const suffix = el.dataset.suffix || '';
+        const duration = 1800;
+        const start = performance.now();
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target + suffix;
+        }
+        requestAnimationFrame(tick);
+        obs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => obs.observe(c));
+  })();
+  </script>
+
+  <!-- 2. IMPROVED REVEAL OBSERVER (unobserves after trigger, Finch easing) -->
+  <script>
+  (function() {
+    const els = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => obs.observe(el));
+  })();
+  </script>
+
+  <!-- 3. STICKY SCROLL TEXT-SWAP -->
+  <script>
+  (function() {
+    const items = document.querySelectorAll('.sticky-swap-item');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible', 'active');
+        } else {
+          e.target.classList.remove('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    items.forEach(item => obs.observe(item));
+  })();
+  </script>
+
 
   <!-- your existing scripts above -->
 
@@ -1616,6 +1716,18 @@
 buildGrid('grid1', 0.85);
 buildGrid('grid2', 0.5);
 buildGrid('grid3', 0.3);
+</script>
+
+<script>
+  const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
 </script>
   </body>
 </html>
