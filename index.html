@@ -16,7 +16,7 @@
 <title>Sufiyan Makhiwala — UI/UX & Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -240,7 +240,7 @@
       </div>
     </div>
 
-    <! E-COMMERCE — Case Study (Confidential) -->
+    <!-- E-COMMERCE — Case Study (Confidential) -->
     <!-- <div class="project-card proj-2 reveal reveal-delay-1" onclick="openCase('safaqat')">
       <div class="project-case-badge">Case Study</div>
       <div class="project-thumb">
@@ -1075,7 +1075,7 @@
     <div class="service-card">
       <div class="service-num">06</div>
       <div class="service-icon-wrap">
-        <img src="images/mentorship.gif" width="50" height="50" viewBox="0 0 34 34" fill="none">
+        <img src="images/me.gif" width="50" height="50" viewBox="0 0 34 34" fill="none">
       </div>
       <div class="service-name">Design Consultation</div>
       <p class="service-desc">Expert UX audits, design reviews, and strategic consultation to level up your existing product, team workflow, or design process.</p>
@@ -1086,63 +1086,59 @@
 
 <!-- PROCESS -->
 <section id="process">
-  <div class="section-label reveal">How I Work</div>
-  <h2 class="section-title reveal">My design <em>process</em></h2>
+  <div class="process-sticky-wrapper">
+    <div class="process-pinned">
+      <div class="section-label">How I Work</div>
+      <h2 class="section-title">My design <em>process</em></h2>
 
-  <div class="process-wave-container reveal">
-    <svg class="process-svg" viewBox="0 0 1200 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="process-path" d="M 0,240 C 150,240 150,80 300,80 C 450,80 450,240 600,240 C 750,240 750,80 900,80 C 1050,80 1050,240 1200,240" fill="none" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>
+      <div class="process-wave-container">
+        <svg class="process-svg" viewBox="0 0 1200 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="process-path-bg" d="M 0,240 C 150,240 150,80 300,80 C 450,80 450,240 600,240 C 750,240 750,80 900,80 C 1050,80 1050,240 1200,240" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+          <path class="process-path" id="processPath" d="M 0,240 C 150,240 150,80 300,80 C 450,80 450,240 600,240 C 750,240 750,80 900,80 C 1050,80 1050,240 1200,240" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
 
-    <div class="process-nodes">
-      <div class="process-node-wrap" style="left:0%; top: calc(75% - 24px);">
-        <div class="process-node">
-          <span>01</span>
-        </div>
-        <div class="process-node-content bottom">
-          <div class="process-name">Discover & Research</div>
-          <div class="process-desc">User interviews, competitive analysis, and empathy mapping before any pixels move.</div>
+        <div class="process-nodes">
+          <div class="process-node-wrap" data-index="0" style="left:0%; top: calc(75% - 24px);">
+            <div class="process-node"><span>01</span></div>
+            <div class="process-node-content bottom">
+              <div class="process-name">Discover & Research</div>
+              <div class="process-desc">User interviews, competitive analysis, and empathy mapping before any pixels move.</div>
+            </div>
+          </div>
+          <div class="process-node-wrap" data-index="1" style="left:25%; top: calc(25% - 24px);">
+            <div class="process-node"><span>02</span></div>
+            <div class="process-node-content top">
+              <div class="process-name">Define & Strategize</div>
+              <div class="process-desc">Personas, journey maps, and design principles from synthesized research.</div>
+            </div>
+          </div>
+          <div class="process-node-wrap" data-index="2" style="left:50%; top: calc(75% - 24px);">
+            <div class="process-node"><span>03</span></div>
+            <div class="process-node-content bottom">
+              <div class="process-name">Wireframe & Prototype</div>
+              <div class="process-desc">Low-fi wireframes to interactive prototypes — validated early, iterated fast.</div>
+            </div>
+          </div>
+          <div class="process-node-wrap" data-index="3" style="left:75%; top: calc(25% - 24px);">
+            <div class="process-node"><span>04</span></div>
+            <div class="process-node-content top">
+              <div class="process-name">Design & Refine</div>
+              <div class="process-desc">High-fidelity UI with typography, motion, color, and accessibility built in.</div>
+            </div>
+          </div>
+          <div class="process-node-wrap" data-index="4" style="left:100%; top: calc(75% - 24px);">
+            <div class="process-node"><span>05</span></div>
+            <div class="process-node-content bottom">
+              <div class="process-name">Test & Deliver</div>
+              <div class="process-desc">Usability testing, iteration, and a clean developer handoff with annotated Figma specs.</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="process-node-wrap" style="left:25%; top: calc(25% - 24px);">
-        <div class="process-node">
-          <span>02</span>
-        </div>
-        <div class="process-node-content top">
-          <div class="process-name">Define & Strategize</div>
-          <div class="process-desc">Personas, journey maps, and design principles from synthesized research.</div>
-        </div>
-      </div>
-
-      <div class="process-node-wrap" style="left:50%; top: calc(75% - 24px);">
-        <div class="process-node">
-          <span>03</span>
-        </div>
-        <div class="process-node-content bottom">
-          <div class="process-name">Wireframe & Prototype</div>
-          <div class="process-desc">Low-fi wireframes to interactive prototypes — validated early, iterated fast.</div>
-        </div>
-      </div>
-
-      <div class="process-node-wrap" style="left:75%; top: calc(25% - 24px);">
-        <div class="process-node">
-          <span>04</span>
-        </div>
-        <div class="process-node-content top">
-          <div class="process-name">Design & Refine</div>
-          <div class="process-desc">High-fidelity UI with typography, motion, color, and accessibility built in.</div>
-        </div>
-      </div>
-
-      <div class="process-node-wrap" style="left:100%; top: calc(75% - 24px);">
-        <div class="process-node">
-          <span>05</span>
-        </div>
-        <div class="process-node-content bottom">
-          <div class="process-name">Test & Deliver</div>
-          <div class="process-desc">Usability testing, iteration, and a clean developer handoff with annotated Figma specs.</div>
-        </div>
+      <div class="process-scroll-hint" id="processHint">
+        <span>scroll to explore</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
     </div>
   </div>
@@ -1474,7 +1470,7 @@
     const canvas = document.getElementById('heroChecker');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    const SIZE = 50;
+    const SIZE = 18;
     let cols, rows, W, H, animFrame, startTime = null;
 
     function resize() {
@@ -1560,30 +1556,46 @@
   <!-- your existing scripts above -->
 
     <script>
-  const path = document.querySelector('.process-path');
-  if (path) {
-    const pathLength = path.getTotalLength();
+  (function() {
+    const path    = document.getElementById('processPath');
+    const wrapper = document.querySelector('.process-sticky-wrapper');
+    const nodes   = Array.from(document.querySelectorAll('.process-node-wrap'));
+    const hint    = document.getElementById('processHint');
+    if (!path || !wrapper) return;
 
-    path.style.animation = 'none';
-    path.style.strokeDasharray = pathLength;
+    const pathLength = path.getTotalLength();
+    path.style.strokeDasharray  = pathLength;
     path.style.strokeDashoffset = pathLength;
 
-    const section = document.querySelector('.process-wave-container');
+    const nodeAt = [0, 0.25, 0.5, 0.75, 1.0];
 
-    window.addEventListener('scroll', () => {
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Start drawing when section enters viewport (top hits bottom of screen)
-      // Finish drawing when section has scrolled 1.5x viewport height past entry
-      const scrollRange = windowHeight * 1.5; // ← increase this to make it slower
-
-      const traveled = windowHeight - rect.top;
-      const progress = Math.min(Math.max(traveled / scrollRange, 0), 1);
+    function update() {
+      const wRect  = wrapper.getBoundingClientRect();
+      const wTotal = wrapper.offsetHeight - window.innerHeight;
+      const scrolled = Math.max(0, -wRect.top);
+      const progress = Math.min(scrolled / wTotal, 1);
 
       path.style.strokeDashoffset = pathLength * (1 - progress);
-    });
-  }
+
+      nodes.forEach((n, i) => {
+        if (progress >= nodeAt[i] - 0.02) {
+          n.classList.add('active');
+        } else {
+          n.classList.remove('active', 'current');
+        }
+        n.classList.remove('current');
+      });
+
+      let last = -1;
+      nodes.forEach((n, i) => { if (n.classList.contains('active')) last = i; });
+      if (last >= 0) nodes[last].classList.add('current');
+
+      if (hint) hint.classList.toggle('hidden', progress > 0.05);
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
 </script>
 
 <script>
